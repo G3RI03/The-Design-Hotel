@@ -343,123 +343,264 @@ body{
     border-top: 1px solid #333;
 }
 /*Mobile*/
-@media (max-width: 576px) {
-    /* Hero Section */
+/* Base mobile improvements */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+    
+    /* Hero Section - Professional & Elegant */
     .hero-photo-section {
-        min-height: 70vh;
-        margin-top: 0;
+        min-height: 80vh;
+        padding: 80px 20px 60px;
     }
     
     .hero-photo-section h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
     }
     
     .hero-photo-section p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        max-width: 100%;
+        opacity: 0.9;
     }
     
     /* About Section */
+    .about-section {
+        padding: 60px 20px;
+    }
+    
     .about-section h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        line-height: 1.3;
     }
     
     .about-section p {
-        font-size: 0.95rem;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        text-align: justify;
     }
     
-    /* Card Images */
-    .card-image {
-        margin: 10px;
-        padding: 5px;
+    /* Choose Rooms Section */
+    .choose-rooms-section {
+        padding: 60px 20px;
     }
     
-    /* Choose Rooms */
     .choose-rooms-section h2 {
-        font-size: 1.75rem;
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+        line-height: 1.3;
+    }
+    
+    .card {
+        margin-bottom: 30px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     
     .card-title {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+        font-weight: 600;
     }
     
     .card-text {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #666;
     }
     
-    .read-more {
-        font-size: 0.75rem;
-        padding: 0.4rem 0.8rem;
+    /* Restaurant Section - Professional Layout */
+    .restaurant-section {
+        padding: 60px 20px;
     }
     
-    /* Restaurant Section */
     .custom-title {
-        font-size: 2rem;
-        padding: 0 15px;
+        transform: translateX(0);
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        padding: 0 10px;
     }
     
     .subtitle {
-        padding: 0 15px;
-        font-size: 0.9rem;
+        transform: translateX(0);
+        font-size: 1.05rem;
+        padding: 0 10px;
+        line-height: 1.6;
+        margin-bottom: 30px;
     }
     
-    /* Offers Section */
-    .custom-title-offer,
+    /* Offers Section - Clean & Sophisticated */
+    .offers-section {
+        padding: 60px 20px;
+    }
+    
+    .custom-title-offer {
+        transform: translateX(0);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    
     .custom-title-offer2 {
-        font-size: 1.75rem;
-        padding: 0 15px;
+        transform: translate(0, 0);
+        font-size: 2.2rem;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        line-height: 1.2;
     }
     
     .subtitle-offer {
+        transform: translate(0, 0);
+        font-size: 1.05rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+    
+    /* Offer Cards - Professional Stacking */
+    .cards-offer,
+    .cards-offer3 {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto 30px;
+        display: block;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    
+    .cards-offer img,
+    .cards-offer3 img {
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .read-more2,
+    .read-more3 {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        padding: 10px 30px;
+        background: rgba(0,0,0,0.8);
+        color: white;
+        border-radius: 4px;
         font-size: 0.9rem;
-        padding: 0 15px;
     }
     
     .cards-offer::after,
     .cards-offer3::after {
-        width: 35%;
-        font-size: 0.75rem;
+        width: 40%;
+        font-size: 0.9rem;
+        padding: 15px 10px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
     }
     
-    /* Newsletter */
-    .newsletter-right {
-        gap: 10px;
-        padding: 0 15px;
-    }
-    
-    .custom-email {
-        font-size: 14px;
-        padding: 10px 0;
-    }
-    
-    .signup {
-        padding: 10px 20px;
-        font-size: 14px;
+    /* Newsletter Section - Professional Form */
+    .news-section {
+        padding: 60px 20px;
     }
     
     .news-section h2 {
-        font-size: 1.75rem;
-    }
-    
-    /* Footer */
-    .footer-section {
-        padding: 30px 0 15px;
-    }
-    
-    .footer-section .col-md-4 {
+        font-size: 2.2rem;
         margin-bottom: 30px;
+        line-height: 1.3;
     }
     
-    .footer-section h3 {
-        font-size: 16px;
-        margin-bottom: 15px;
+    .news-section .container {
+        flex-direction: column;
+        padding: 40px 20px;
+        max-width: 600px;
+        margin: 0 auto;
     }
     
-    .footer-section p {
-        font-size: 13px;
+    .newsletter-right {
+        transform: translateX(0);
+        min-width: 100%;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .custom-subtitle-news {
+        transform: translateX(0);
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 1.05rem;
         line-height: 1.6;
     }
     
-    .footer-section::after {
-        margin-top: 20px;
+    .custom-email {
+        transform: translateX(0);
+        width: 100%;
+        padding: 15px 0;
+        font-size: 16px;
+        border-bottom: 2px solid #333;
+        transition: border-color 0.3s;
+    }
+    
+    .custom-email:focus {
+        border-bottom-color: #d4af37;
+    }
+    
+    .signup {
+        transform: translateX(0);
+        width: 100%;
+        padding: 15px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+        border-radius: 4px;
+    }
+    
+    .signup:hover {
+        background: #333;
+        color: white;
+    }
+    
+    /* Footer Section - Professional & Organized */
+    .footer-section {
+        padding: 50px 20px 30px;
+    }
+    
+    .footer-section .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 45px;
+        padding: 0;
+    }
+    
+    .footer-section h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    
+    .footer-section p {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+    
+    .footer-section p i {
+        width: 25px;
+        font-size: 16px;
     }
 }
