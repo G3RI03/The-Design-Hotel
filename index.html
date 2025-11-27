@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyStay Hotel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/jpg" href="/image/favlogo.jpg">
+</head>
+
+<body>
+
+    <!-- Navbar with menu in the left name in the middle and the book now and contact in the right-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 top-fixed fw-bold">
+  <div class="container">
+    
+ <a href="#" class="nav-link p-0 me-auto">
+  <i class="bi bi-list" style="font-size: 2rem;"></i>
+</a>
+  <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x"> Hoteller ★★★★★</a>
+        <ul class="navbar-nav ms-auto">
+    <a href="#" class="btn btn-primary btn-lg px-4 text-center" style="border-radius: 30px;">Book Now</a> 
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          <i class="bi bi-telephone" style="font-size: 1.5rem;"></i>
+         </a>
+    <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+          <h6 class="dropdown-header">Contact</h6>
+        </div>
+      </li>
+    </ul>
+   </div>
+   </nav>
+
+    <!--NOTE:menu= should include about rooms services eat&drink contact-->
+    
+    <!-- HERO SECTION text photo in the right -->
+     <section class="hero-photo-section py-5">
+        <div class="container">
+          <h1 class="display-4 font-weight-bold text-end">Welcome to <br> the Hotel</h1>
+           <br>
+           <p class="hero-subtitle mt-3 mb-4 text-end ms-auto">Nestled in the heart of breathtaking natural our hotel offers a truly enchating experience that caters to every aspect of your stay.</p>  
+           <div class="text-center">
+          <a href="#" class="btn btn-primary btn-lg px-4 text-center" style="border-radius: 30px;">Explore More</a>
+        </div>
+        </div>
+
+     </section>
+
+    <!--About our Hotel photo in the left and text in the right with explore the hotel-->
+     <section class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Text on the left -->
+      <div class="col-md-6">
+        <h1 class="display-5 fw text-start">About <br>Our Hotel</h1>
+        <p class="hero-subtitle mt-3 mb-4 text-start">
+          Experience the epitome of luxury by booking your <br>
+          stay at Hoteller. Whether it's a romantic getaway,<br>
+          a family vacation, or a business trip.
+        </p>  
+        <a href="#" class="btn btn-outline-light btn-lg px-4 text-center">Explore the hotel</a>
+      </div>
+       <!-- Image on the right -->
+      <div class="col-md-6 text-end">
+        <div class="card-image">
+          <img src="/image/room5.jpg" alt="Rooms" class="img-fluid">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--Choose our Rooms  subheader=view all room types and use cards or carousel-->
+    <section class="choose-rooms-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>CHOOSE<br>OUR ROOMS</h2>
+        <a href="#" class="view-all-btn">View All Types of Rooms</a>
+      </div>
+
+      <div class="row">
+        <!-- Standard Room -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card room-card">
+            <img class="card-img-top" src="image/room2.jpg" alt="Standard Room">
+            <div class="card-body">
+              <h4 class="room-title">Standard Room</h4>
+              <p class="room-capacity">👥 2 Adults · 1 Child · 27 m²</p>
+              <div class="room-features">
+                Average area: 27 sq. m.<br>
+                Bed type: 2 Twin / King-size<br>
+                View: Courtyard View
+              </div>
+              <p class="room-price fw-bold">$75 <span>/ night</span></p>
+              <a href="#" class="btn btn-primary" style="border-radius: 10px;">Book Now</a>
+              <a href="#" class="btn btn-outline-primary" style="border-radius: 10px;"  >Discover More</a>
+            </div>
+          </div>
+        </div>
+    <!-- Deluxe Room -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card room-card">
+            <img class="card-img-top" src="image/room3.jpg" alt="Deluxe Room">
+            <div class="card-body">
+              <h4 class="room-title">Deluxe Room</h4>
+              <p class="room-capacity">👥 2 Adults · 2 Children · 35 m²</p>
+              <div class="room-features">
+                Average area: 35 sq. m.<br>
+                Bed type: Queen / King-size<br>
+                View: City View
+              </div>
+              <p class="room-price fw-bold">$120 <span>/ night</span></p>
+              <a href="#" class="btn btn-primary" style="border-radius: 10px;">Book Now</a>
+              <a href="#" class="btn btn-outline-primary" style="border-radius: 10px;"  >Discover More</a>
+            </div>
+          </div>
+        </div>
+      <!-- Executive Suite -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card room-card">
+            <img class="card-img-top" src="image/room4.jpg" alt="Executive Suite">
+            <div class="card-body">
+              <h4 class="room-title">Executive Suite</h4>
+              <p class="room-capacity">👥 3 Adults · 2 Children · 50 m²</p>
+              <div class="room-features">
+                Average area: 50 sq. m.<br>
+                Bed type: King-size + Sofa bed<br>
+                View: Premium Ocean View
+              </div>
+              <p class="room-price fw-bold">$195 <span>/ night</span></p>
+              <a href="#" class="btn btn-primary" style="border-radius: 10px;">Book Now</a>
+              <a href="#" class="btn btn-outline-primary" style="border-radius: 10px;"  >Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Eat&Drink use cards-->
+    <section class="restaurant-section py-5">
+        <div class="container">
+            
+<h2 class="fw-bold mb-5 custom-title">Eat <br> & Drink</h2>
+
+    <p class="subtitle">Whether you’re staying with us or simply indulging in an unforgettable meal,<br> we’re dedicated to providing an exceptional journey for your senses.
+
+</p>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/holt.jpg" class="card-img-top img-fluid" alt="Rooftop Restaurant">
+            <a href="#" class="read-more btn btn-dark px-4  position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Rooftop Restaurant & bar</h5>
+            <p class="card-text">Our hotel boasts a range of elegantly designed rooms and suites.</p>
+          </div>
+        </div>
+      </div>
+    <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/jazzbar.jpg" class="card-img-top img-fluid" alt="Jazz Bar">
+            <a href="#" class="read-more btn btn-dark position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Lobby Bar</h5>
+            <p class="card-text">Immerse yourself in our culinary events, such as chef's tasting menus, wine-pairing evenings.</p>
+          </div>
+        </div>
+      </div>
+     <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/private.jpg" class="card-img-top img-fluid" alt="Private">
+            <a href="#" class="read-more btn btn-dark position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Elegant Ambiance</h5>
+            <p class="card-text">The restaurant's sophisticated decor provides a cozy yet upscale setting, perfect for intimate dinners, celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+    <!--Special Offers 2 photos 1 for work and travel and one for weeding-->
+     <section class="offers-section py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-5 custom-title-offer">Special</h2>
+            <h3 class="custom-title-offer2">Offers</h3>
+            <p class="subtitle-offer">As our valued guest, you’ll receive exclusive discounts at nearby boutiques and shops. <br>
+                 Take a piece of your getaway home with you as a keepsake of your time with us.</p>
+                 <div class="cards-offer position-relative">
+                    <img src="/image/cocktail.jpg" alt="Work&Travel Offer">
+                      <a href="#" class="read-more2 btn btn-light position-absolute">READ MORE</a> 
+                    </div>
+                    <div class="cards-offer3 position-relative">
+                        <img src="image/private.jpg" alt="Private Room">
+                        <a href="#" class="read-more3 btn btn-light position-absolute">READ MORE</a>
+                    </div>
+        </div>
+ </section>
+ <br>
+
+    <!--hotel news + signup email adress + signup-->
+    <section class="news-section">
+  <div class="container">
+    <h2 class="custom-title-news">Would you like to<br>receive hotel news and<br>special offers?</h2>
+      <div class="newsletter-right">
+      <input type="email" class="custom-email" placeholder="Your email address">
+      <button class="signup btn btn-light">SIGN UP</button>
+    </div>
+  </div>
+  <div class="row g-4">
+  <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/activite1.jpg" class="card-img-top img-fluid" alt="Rooftop Restaurant">
+            <a href="#" class="read-more btn btn-dark px-4  position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Rooftop Restaurant & bar</h5>
+            <p class="card-text">Our hotel boasts a range of elegantly designed rooms and suites.</p>
+          </div>
+        </div>
+      </div>
+    <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/activite2.jpg" class="card-img-top img-fluid" alt="Jazz Bar">
+            <a href="#" class="read-more btn btn-dark position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Lobby Bar</h5>
+            <p class="card-text">Immerse yourself in our culinary events, such as chef's tasting menus, wine-pairing evenings.</p>
+          </div>
+        </div>
+      </div>
+     <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card border-0">
+          <div class="position-relative">
+            <img src="/image/ski.jpg" class="card-img-top img-fluid" alt="Private">
+            <a href="#" class="read-more btn btn-dark position-absolute">READ MORE</a>
+          </div>
+          <div class="card-body px-0 pt-3">
+            <h5 class="card-title">Elegant Ambiance</h5>
+            <p class="card-text">The restaurant's sophisticated decor provides a cozy yet upscale setting, perfect for intimate dinners, celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+    </section>
+    <br>
+    <!--footer take from the photo-->
+<section class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> The Hoteller Resort Via Serlas 27,<br>7500 St.Moritz, Switzerland</p>
+                <p><i class="fas fa-phone"></i> +41 22 345 67 88</p>
+                <p><i class="fas fa-envelope"></i> contact@email.com</p>
+            </div>
+            
+            <div class="col-md-4">
+                <h3>Links</h3>
+                <p>About Hotels</p>
+                <p>Our Rooms</p>
+                <p>Restaurant & Bar</p>
+                <p>SPA & Wellness</p>
+                <p>Contact</p>
+            </div>
+            
+            <div class="col-md-4">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+                <p>Get Directions</p>
+                
+                <h3 style="margin-top: 20px;">Languages</h3>
+                <p>EN</p>
+                <p>DE</p>
+                <p>FR</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script> </script>
+</html>

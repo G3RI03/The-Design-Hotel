@@ -1,0 +1,465 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  max-width: 420px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+.hero-photo-section {
+    background: url(/image/photo6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh; /* Add minimum height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: -16px;
+}
+/* Dark overlay */
+.hero-photo-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+/* Make sure content appears above overlay */
+.hero-photo-section > * {
+    position: relative;
+    z-index: 2;
+}
+.hero-photo-section h1{
+    color: white;
+    font-size: 5rem;
+}
+.hero-photo-section p{
+    color: white;
+    font-size: 1.3rem;
+}
+/*menu icon*/
+.bi-list{
+    color: white;
+}
+
+.card-image{
+    margin: 20px;
+    padding: 10px;
+    border-style: outset;
+    color: white;
+}
+.about-section{
+    background-color: black;
+}
+.about-section h1{
+    color: white;
+}
+.about-section p{
+    color: white;
+    font-size: 1.2rem;
+}
+.choose-rooms-section{
+    background-color: rgb(231, 220, 201) ;
+}
+.choose-rooms-section h2{
+    color: black;
+    font-size: 3rem;
+    gap: 1px;
+    font-weight: 500;
+}
+
+.choose-rooms-section .btn{
+    gap: 10px;
+    
+}
+/* READ MORE overlay button */
+.read-more {
+  bottom: -15px;
+  right: 0px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.read-more:hover {
+  opacity: 1;
+}
+
+/* Card title and text */
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+/* Optional: subtle hover effect on card */
+.card:hover img {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+.restaurant-section p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.custom-title {
+    text-align: center;
+    transform: translateX(-200px); /* move more or less */
+    font-size: 55px;
+}
+
+.subtitle {
+    text-align: center;
+    transform: translateX(80px);
+    
+}
+
+.offers-section{
+    background-color: black;
+}
+.custom-title-offer{
+    color: white;
+    text-align: center;
+    transform: translateX(-120px);
+    font-size: 3.5rem;
+}
+.custom-title-offer2{
+     color: white;
+    text-align: center;
+    font-weight:900;
+    transform: translate(-100px, -50px);
+    font-size: 3rem;
+}
+.subtitle-offer{
+    color: white;
+     transform: translate(320px, -140px);
+     text-align: center;
+     font-size: 1.2rem ;
+}
+
+.cards-offer,
+.cards-offer3 {
+    display: inline-block;      /* allows horizontal alignment */
+    vertical-align: top;        /* align tops of the cards */
+    width: 400px;               /* same width for both cards */
+    margin-right: 20px;         /* spacing between the cards */
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #fff;
+    border-style: outset;
+    color: white ;
+    
+}
+
+/* Remove any transform on the second card */
+.cards-offer3 {
+    transform: none;
+    top: 0;                     /* optional: adjust vertical position */
+    margin-left: 0;             /* spacing handled by first card's margin-right */
+}
+
+/* Images inside both cards */
+.cards-offer img,
+.cards-offer3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    margin: 0;
+}
+.read-more2,
+.read-more3{
+    text-align: center;
+    bottom: 25px;
+    left: 140px;
+}
+.cards-offer::after,
+.cards-offer3::after {
+    content: "Special Offer";       /* replace with your text */
+    position: absolute;
+    top: 50%;                        /* vertically center */
+    left: 0;                        /* stick to the left edge */
+    transform: translateY(-50%);     /* center vertically exactly */
+    width: 20%;                       /* overlay covers half of the image */
+    height: 100%;                      /* optional: full height of the image */
+    background: rgba(0,0,0,0.5);     /* semi-transparent overlay */
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+.news-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+
+.newsletter-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 370px;
+    transform: translateX(180px);
+}
+
+.custom-email {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    transform: translateX(-250px);
+}
+
+.signup {
+    padding: 12px 30px;
+    background: white;
+    color: black;
+    border: 1px solid #333;
+    cursor: pointer;
+    width: 100%;
+    transform: translateX(-250px);
+}
+.custom-subtitle-news{
+    transform: translateX(-250px);
+    margin-top: 50px;
+}
+.news-section{
+    background-color: rgb(231, 220, 201) ;
+}
+.news-section h2{
+    color: black;
+    font-size: 3rem;
+    gap: 1px;
+    font-weight: 500;
+}
+
+.news-section .btn{
+    gap: 10px;
+    }
+
+  /* Footer Section Styles */
+.footer-section {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 0 30px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.footer-section .col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 12px;
+}
+
+.footer-section p i {
+    margin-right: 10px;
+    color: #d4af37;
+    width: 20px;
+}
+
+.footer-section a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #d4af37;
+}
+
+/* Make links clickable style */
+.footer-section .col-md-4:nth-child(2) p,
+.footer-section .col-md-4:nth-child(3) p {
+    cursor: pointer;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-section .col-md-4:nth-child(2) p:hover,
+.footer-section .col-md-4:nth-child(3) p:hover {
+    color: #d4af37;
+    padding-left: 5px;
+}
+
+/* Language section spacing */
+.footer-section h3[style*="margin-top"] {
+    margin-top: 30px !important;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+/*Mobile*/
+@media (max-width: 576px) {
+    /* Hero Section */
+    .hero-photo-section {
+        min-height: 70vh;
+        margin-top: 0;
+    }
+    
+    .hero-photo-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-photo-section p {
+        font-size: 0.9rem;
+    }
+    
+    /* About Section */
+    .about-section h1 {
+        font-size: 2rem;
+    }
+    
+    .about-section p {
+        font-size: 0.95rem;
+    }
+    
+    /* Card Images */
+    .card-image {
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    /* Choose Rooms */
+    .choose-rooms-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .card-title {
+        font-size: 1rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+    
+    .read-more {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    /* Restaurant Section */
+    .custom-title {
+        font-size: 2rem;
+        padding: 0 15px;
+    }
+    
+    .subtitle {
+        padding: 0 15px;
+        font-size: 0.9rem;
+    }
+    
+    /* Offers Section */
+    .custom-title-offer,
+    .custom-title-offer2 {
+        font-size: 1.75rem;
+        padding: 0 15px;
+    }
+    
+    .subtitle-offer {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+    
+    .cards-offer::after,
+    .cards-offer3::after {
+        width: 35%;
+        font-size: 0.75rem;
+    }
+    
+    /* Newsletter */
+    .newsletter-right {
+        gap: 10px;
+        padding: 0 15px;
+    }
+    
+    .custom-email {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    
+    .signup {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .news-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    /* Footer */
+    .footer-section {
+        padding: 30px 0 15px;
+    }
+    
+    .footer-section .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    .footer-section h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .footer-section p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    
+    .footer-section::after {
+        margin-top: 20px;
+    }
+}
