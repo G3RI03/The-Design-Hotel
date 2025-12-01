@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CozyStay Hotel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.8.0/css/flag-icons.min.css">
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/jpg" href="/image/favlogo.jpg">
+</head>
+
+<body>
+<!-- Navbar with menu in the left name in the middle and the book now and contact in the right-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3  fw-bold">
+  <div class="container">
+    
+<a href="#" class="nav-link p-0 me-auto" onclick="toggleSidebar()">
+  <i class="bi bi-list text-white" style="font-size: 2rem;"></i>
+</a>
+  <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x"> Hoteller ★★★★★</a>
+        <ul class="navbar-nav ms-auto">
+    <a href="Booknow.html" class="btn btn-primary btn-lg px-4 text-center" style="border-radius: 30px;">Book Now</a> 
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          <i class="bi bi-telephone" style="font-size: 1.5rem;"></i>
+         </a>
+    <div class="dropdown-menu dropdown-menu-right profile-dropdown">
+          <h6 class="dropdown-header">Contact</h6>
+        </div>
+      </li>
+    </ul>
+    <!--Language Dropdown-->
+     <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown">
+      <i class="bi bi-translate" style="font-size: 1.5rem;"></i>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+      <li><a class="dropdown-item" href="#"><span class="fi fi-gb"></span> English</a></li>
+      <li><a class="dropdown-item" href="#"><span class="fi fi-fr"></span> French</a></li>
+      <li><a class="dropdown-item" href="#"><span class="fi fi-de"></span> German</a></li>
+      <li><a class="dropdown-item" href="#"><span class="fi fi-it"></span> Italian</a></li>
+    </ul>
+  </li>
+   </div>
+   </nav>
+
+    <!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <h4>Menu</h4>
+    <button class="close-btn" onclick="toggleSidebar()">
+  <i class="bi bi-x-circle-fill"></i>
+</button>
+  </div>
+ <a href="index.html">Home</a>
+  <a href="Restaurant.html">Restaurant</a>
+  <a href="spa.html">SPA & Wellness</a>
+  <a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<!-- Page Content -->
+
+
+
+
+
+</body>
+<script>
+    function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.querySelector('.sidebar-overlay');
+    
+    sidebar.classList.toggle('active');
+    
+    // Create overlay if it doesn't exist
+    if (!overlay) {
+        const newOverlay = document.createElement('div');
+        newOverlay.className = 'sidebar-overlay';
+        newOverlay.onclick = toggleSidebar;
+        document.body.appendChild(newOverlay);
+        setTimeout(() => newOverlay.classList.add('active'), 10);
+    } else {
+        overlay.classList.toggle('active');
+    }
+}
+
+// Close sidebar when clicking outside
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    const menuIcon = document.querySelector('.bi-list');
+    
+    if (sidebar.classList.contains('active') && 
+        !sidebar.contains(event.target) && 
+        !menuIcon.contains(event.target)) {
+        toggleSidebar();
+    }
+});
+</script>
+
+</html>
