@@ -27,7 +27,7 @@
 <body>
 
     <!-- Navbar con menu a sinistra, nome al centro, prenotazione e contatti a destra -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 fixed-top fw-bold">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3  fw-bold">
         <div class="container">
             <a href="#" class="nav-link p-0 me-auto" onclick="toggleSidebar()">
                 <i class="bi bi-list text-white" style="font-size: 2rem;"></i>
@@ -429,12 +429,13 @@ function toggleSidebar() {
       } else {
         window.location.href = 'index.html';
       }
-
-      // Option 2: (Alternative) Add query parameter to current page
-      // const url = new URL(window.location.href);
-      // url.searchParams.set('lang', lang);
-      // window.location.href = url.toString();
     });
+  });
+</script>
+<script>
+  window.addEventListener("scroll", function() {
+    document.querySelector(".navbar")
+      .classList.toggle("scrolled", window.scrollY > 50);
   });
 </script>
 </html>

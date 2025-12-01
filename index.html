@@ -444,13 +444,15 @@ function toggleSidebar() {
       } else {
         window.location.href = 'index.html';
       }
-
-      // Option 2: (Alternative) Add query parameter to current page
-      // const url = new URL(window.location.href);
-      // url.searchParams.set('lang', lang);
-      // window.location.href = url.toString();
     });
   });
 </script>
+<script>
+  window.addEventListener("scroll", function() {
+    document.querySelector(".navbar")
+      .classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
+
 
 </html>

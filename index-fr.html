@@ -431,6 +431,12 @@ function toggleSidebar() {
     });
   });
 </script>
+<script>
+  window.addEventListener("scroll", function() {
+    document.querySelector(".navbar")
+      .classList.toggle("scrolled", window.scrollY > 50);
+  });
+</script>
 
     </body>
     </html>
