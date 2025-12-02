@@ -24,6 +24,7 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/jpg" href="/image/favlogo.jpg">
+    
 </head>
 
 <body>
@@ -73,9 +74,27 @@
   </div>
   <a href="#">Home</a>
   <a href="Booknow.html">Book Now</a>
-  <a href="Restaurant.html">Restaurant</a>
+ <!-- Our Rooms with dropdown -->
+ <a href="#roomsDropdown" data-bs-toggle="collapse" class="dropdown-toggle">Our Rooms</a>
+  <div class="collapse" id="roomsDropdown">
+    <a href="#" class="dropdown-subitem">1. Standard Room</a>
+    <a href="#" class="dropdown-subitem">2. Deluxe Room</a>
+    <a href="#" class="dropdown-subitem">3. Executive Rooms</a>
+  </div>
+ <a href="Restaurant.html">Restaurant</a>
   <a href="spa.html">SPA & Wellness</a>
   <a href="gallery.html">Gallery</a>
+  <!--Contact with dropdown-->
+  <a href="#contactDropdown" data-bs-toggle="collapse" class="dropdown-toggle">Contact Us</a>
+<div class="collapse" id="contactDropdown">
+  <a href="tel:+41223456788" class="dropdown-subitem">+41 22 345 6788</a>
+  <a href="mailto:contact@email.com" class="dropdown-subitem">contact@email.com</a>
+</div>
+
+</div>
+
+</div>
+
 
 </div>
  <!-- HERO SECTION text photo in the right -->
@@ -92,7 +111,7 @@
      </section>
 
     <!--About our Hotel photo in the left and text in the right with explore the hotel-->
-     <section class="about-section">
+     <section class="about-section fade-in-left">
   <div class="container">
     <div class="row align-items-center">
       <!-- Text on the left -->
@@ -453,6 +472,22 @@ function toggleSidebar() {
       .classList.toggle("scrolled", window.scrollY > 50);
   });
 </script>
+<script>
+  /* Fade-in from left animation */
+const leftEls = document.querySelectorAll('.fade-in-left');
 
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show'); 
+      // remove this line if you want the animation only once
+    }
+  });
+});
+
+leftEls.forEach(el => observer.observe(el));
+</script>
 
 </html>

@@ -58,7 +58,7 @@ body{
 }
 .about-section{
     background-color: black;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .about-section h1{
     color: white;
@@ -70,7 +70,7 @@ body{
 .choose-rooms-section{
     background-color: rgb(231, 220, 201) ;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .choose-rooms-section h2{
     color: black;
@@ -114,6 +114,9 @@ body{
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
+.restaurant-section{
+    margin-top: 15px;
+}
 .restaurant-section p{
     color: black;
     font-family: 'Times New Roman', Times, serif;
@@ -134,6 +137,7 @@ body{
 
 .offers-section{
     background-color: black;
+    margin-top: 10px;
 }
 .custom-title-offer{
     color: white;
@@ -415,7 +419,15 @@ body{
   padding: 20px;
   transition: 0.3s ease;
   z-index: 9999;
+   overflow-y: auto;   
 }
+/* Custom scrollbar for sidebar  */
+ .sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+  }
 
 .sidebar.active {
   left: 0;
@@ -473,6 +485,7 @@ body{
 .bi-telephone{
     color: white;
 }
+
 
 /* ============================================
    MOBILE-ONLY STYLES (max-width: 576px)
@@ -692,4 +705,15 @@ body{
     .overlay.active {
         display: block;
     }
+}
+/* Fade-in-left animation */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 2.5s ease-out, transform 2.5s ease-out; /* slower */
+}
+
+.fade-in-left.show {
+  opacity: 1;
+  transform: translateX(0);
 }
